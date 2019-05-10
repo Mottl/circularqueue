@@ -6,7 +6,7 @@ package circularqueue
 
 import "fmt"
 
-func ExampleLen() {
+func ExampleQueue_Len() {
 	q := NewQueue(10)
 
 	q.Push("abc")
@@ -17,7 +17,7 @@ func ExampleLen() {
 	// Output: 3
 }
 
-func ExampleCap() {
+func ExampleQueue_Cap() {
 	q := NewQueue(10)
 
 	q.Push("abc")
@@ -28,7 +28,7 @@ func ExampleCap() {
 	// Output: 10
 }
 
-func ExampleVacant() {
+func ExampleQueue_Vacant() {
 	q := NewQueue(10)
 
 	q.Push("abc")
@@ -39,7 +39,7 @@ func ExampleVacant() {
 	// Output: 7
 }
 
-func ExamplePush() {
+func ExampleQueue_Push() {
 	q := NewQueue(2)
 
 	vacant1, err1 := q.Push("abc")
@@ -55,7 +55,7 @@ func ExamplePush() {
 	// 0 Can't push: queue is full (capacity=2)
 }
 
-func ExamplePopAt() {
+func ExampleQueue_PopAt() {
 	q := NewQueue(10)
 	q.Push("abc")
 	q.Push("def")
@@ -71,7 +71,7 @@ func ExamplePopAt() {
 	// <nil> Can't pop: queue is empty
 }
 
-func ExamplePop() {
+func ExampleQueue_Pop() {
 	q := NewQueue(10)
 	q.Push("abc")
 	q.Push("def")
@@ -87,7 +87,7 @@ func ExamplePop() {
 	// <nil> Can't pop: queue is empty
 }
 
-func ExampleString() {
+func ExampleQueue_String() {
 	q := NewQueue(10)
 	q.Push("abc")
 	q.Push("def")

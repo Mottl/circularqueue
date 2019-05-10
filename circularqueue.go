@@ -80,10 +80,10 @@ func (q *Queue) Push(element interface{}) (int, error) {
 }
 
 // PopAt takes and removes the element at the index position from the queue
-// index = 0 to take the first element (the head)
-// index = N to take the Nth element from the head
-// index = -1 to take the last element (the tail)
-// index = -N to take the Nth element from the tail
+//  index = 0 to take the first element (the head)
+//  index = N to take the Nth element from the head
+//  index = -1 to take the last element (the tail)
+//  index = -N to take the Nth element from the tail
 func (q *Queue) PopAt(index int) (interface{}, error) {
 	q.mutex.Lock()
 	defer q.mutex.Unlock()
