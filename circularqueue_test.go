@@ -8,7 +8,7 @@ import "fmt"
 
 func ExampleLen() {
 	q := NewQueue(10)
-	
+
 	q.Push("abc")
 	q.Push("def")
 	q.Push("ghi")
@@ -19,7 +19,7 @@ func ExampleLen() {
 
 func ExampleCap() {
 	q := NewQueue(10)
-	
+
 	q.Push("abc")
 	q.Push("def")
 	q.Push("ghi")
@@ -30,7 +30,7 @@ func ExampleCap() {
 
 func ExampleVacant() {
 	q := NewQueue(10)
-	
+
 	q.Push("abc")
 	q.Push("def")
 	q.Push("ghi")
@@ -41,7 +41,7 @@ func ExampleVacant() {
 
 func ExamplePush() {
 	q := NewQueue(2)
-	
+
 	vacant1, err1 := q.Push("abc")
 	vacant2, err2 := q.Push("def")
 	vacant3, err3 := q.Push("ghi")
